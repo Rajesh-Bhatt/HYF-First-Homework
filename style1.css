@@ -204,10 +204,14 @@ footer {
   color: #fff;
   margin-top: 3em;
   text-align: center;
+  display: flex;
+  padding-top: 1em;
+  flex-direction: column;
 }
 
 div.portfolio {
-  color: blue;
+  color: #61a4eb;
+  padding-top: 1em;
 }
 
 .top {
@@ -216,6 +220,8 @@ div.portfolio {
   padding: 0.5em;
   border-radius: 50%;
   border: 2px lightblue solid;
+  display: block;
+  place-self: center;
 }
 
 footer .footer-links {
