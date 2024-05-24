@@ -1,91 +1,147 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My personal portfolio website using HTML and CSS</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
-    <title>Payment Title</title>
-</head>
-<body>
-        <header>
-            <div class="container">
-                <h1>Order Summary</h1>
-                <div class="items">
-                    <span>Total</span>
-                    <span> $333 / month </span>
-                </div>
-                <hr class="line-break" />
-                <div class="items">
-                    <span><b>Total</b></span>
-                    <span><b>$100</b></span>
-                </div>
-            </div>
-    
-        </header>
-    
-        <form class="payment-form">
-            <div class="common">
-                <h3 class="payment-title">Payment Method</h2>
-                    <div class="payment-card box">
-    
-                        <label for="debit-credit" class="card-label">
-    
-                            <input type="radio" id="debit-credit" value="cards" name="payment-method" />
-                            <div class="card">
-                                <img src="cards.png" alt="card picture">
-                                <p class="txt-center">Crebit / Dredit</p>
-                            </div>
-                        </label>
-    
-                        <label for="paypal" class="card-label">
-    
-                            <input type="radio" id="paypal" value="pp" name="payment-method">
-                            <div class="card">
-                                <img src="rectangle_RIGHT.png" alt="paypal image">
-                                <p class="txt-center">PayPal</p>
-                            </div>
-                        </label>
-                    </div>
-            </div>
-    
-            <div class="common">
-                <h3 class="payment-title">Card Info</h2>
-                    <div class="payment-card-1 box">
-    
-                        <div class="card-info number-grid">
-                            <label for="card-number">Card Number</label>
-                            <div>
-                                <input type="number" name="card-number" id="card-number" placeholder="1234 1234 1234 1234"
-                                    required /><i class="fa fa-question-circle"></i>
-                            </div>
-                        </div>
-    
-                        <div class="card-info date-grid">
-                            <label for="datemax">Expiry Date</label>
-                            <input type="text" id="datemax" placeholder="MM / YY" required />
-                        </div>
-    
-                        <div class="card-info cvv-grid">
-                            <label for="cvv-number">CVV</label>
-                            <div>
-                                <input type="number" id="cvv-number" name="cvv-number" placeholder="cvv" /><i
-                                    class="fa fa-question-circle"></i>
-                            </div>
-                        </div>
-    
-                    </div>
-            </div>
-    
-            <div class="btn-flex">
-                <button id="buy-btn" type="submit" value="buy-now">Buy Now</button>
-                <p>Need help?</p>
-            </div>
-        </form>
-    </body>
-    
-    </html>
+  <body>
+    <header id="header">
+      <a href="#" class="logo"><span>Rajesh</span></a>
+      <nav class="navbar">
+        <a href="#about-me">About Me</a>
+        <a href="#my-projects">My Portfolio</a>
+        <a href="#contact">Contact</a>
+        <a href="#description">Description</a>
+        <a href="#skills">Technical Skills</a>
+      </nav>
+    </header>
 
+    <section class="home">
+      <div class="home-content">
+        <div id="about-me">
+          <h1>Hi, I am Rajesh Bhatt</h1>
+          <div id="designation">
+            <h3>Frontend Developer</h3>
+          </div>
+        </div>
 
+        <div id="contact">
+          <div>
+            <button class="contact-btn">CONTACT ME 😎</button>
+          </div>
+          <div class="home-sci">
+            <a href="tel:+4571844067"><i class="bx bx-phone"></i></a>
+            <a href="mailto:rjshbhatt9@gmail.com"
+              ><i class="bx bxs-envelope"></i
+            ></a>
+            <a href="https://www.facebook.com/rajesh.bhatt.9847" target="_blank"
+              ><i class="bx bxl-facebook-square"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/rajesh-bhatt-aba8361b/"
+              target="_blank"
+              ><i class="bx bxl-linkedin-square"></i
+            ></a>
+          </div>
+        </div>
+
+        <div id="description">
+          <h2>Description</h2>
+          <p>
+            I am a Web Developer and enthusiastic Test Specialist, having more
+            than 5 years work experience in software development and web
+            testing. I have hands on work experience in requirement analysis,
+            web designing, web development and website/ web application testing.
+            I am good in test planning, test case preparation, test case
+            execution, bug reporting, bug fixing, retesting and regression
+            testing. I have good communication skills and ability to solve
+            issues within the estimated time period. I am always eagar to learn
+            new technologies and skills. I m passionate about quality of the
+            software products as well.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- section: Technical Skills -->
+    <section class="skills-section">
+      <div id="skills"></div>
+      <h2>Technical Skills</h2>
+      Given below are my technical skills...
+
+      <div class="cells">
+        <div class="cell">
+          <img src="images/html.png" alt="html logo" />
+          <span>HTML</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/css.png" alt="css logo" />
+          <span>CSS</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/javascript.png" alt="javascript logo" />
+          <span>Javascript</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/nodejs.png" alt="node logo" />
+          <span>Node.js</span>
+        </div>
+
+        <div class="cell">
+          <img src="images/react.png" alt="react logo" />
+          <span>React.js</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio section -->
+
+    <section id="my-projects">
+      <h2>My Portfolio</h2>
+
+      <div class="projects-images">
+        <img src="images/cafemenupage.png" alt="Image for Project1" />
+        <img src="images/survey.png" alt="Image for Project2" />
+        <img src="images/portfolio.png" alt="Image for Project3" />
+      </div>
+    </section>
+
+    <!-- footer -->
+    <footer id="contact-info">
+      <a href="#header" class="top">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+      </a>
+      <div class="portfolio">
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="footer-links">
+        <ul class="links">
+          <li><a href="#about-me">ABOUT ME</a></li>
+          <li><a href="#skills">SKILLS</a></li>
+          <li><a href="#my-projects">PORTFOLIO</a></li>
+          <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <p class="created-by">Created By Rajesh</p>
+      </div>
+    </footer>
+
+    <!-- container end -->
+  </body>
+</html>
