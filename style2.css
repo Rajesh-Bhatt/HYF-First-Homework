@@ -1,0 +1,230 @@
+body {
+    font-family: "Microsoft Sans Serif", serif;
+    font-size: 16px;
+  }
+  
+  * { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .blue-background {
+    background: gray url(https://i2.wp.com/mbsc.ie/WP/wp-content/uploads/2016/08/desktop-sea-wallpaper-background-horizon-blue-nature-landscape-landscapes-26845.jpg);
+    color: #fff;
+    padding-bottom: 3em;
+  }
+  
+  .container {
+    margin: 0 5em;
+  }
+  
+  /* navbar */
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 0;
+  }
+  
+  @media (max-width: 768px) {
+    nav {
+      flex-direction: column;
+    }
+  }
+  
+  nav #title a {
+    color: #fff;
+    font-size:2em;
+    text-decoration: none;
+  }
+  
+  nav #title a:hover {
+    text-decoration: underline;
+  }
+  
+  nav > ul {
+    list-style: none;
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+    }
+  }
+  
+  nav > ul li {
+    padding: .5em;
+  }
+  
+  nav > ul li a {
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  /* header */
+  header {
+    display: flex;
+  }
+  
+  @media (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  }
+  
+  #about-me .info-details {
+    line-height: 1.5em;
+    margin-top: 1em;
+  }
+  
+  header .description {
+    margin: 0.5em 0 1em;
+  }
+  
+  header #personal-info,
+  header #about-me {
+    flex-basis: 50%;
+  }
+  
+  /* your name */
+  header #personal-info .round {
+    border-radius: 50%;
+    width: 300px;
+    height: 350px;
+
+  }
+  
+  header #personal-info .contact-info li {
+    list-style-type: none;
+    line-height:1.7em;
+  }
+  header #personal-info .contact-info i {
+    margin-right: none;
+    color: #fff;
+  }
+  
+  header #personal-info .contact-info a:hover{
+      background-color:red;
+      transition:background 2s;
+    }
+  
+  header #personal-info .contact-btn {
+    background-color: #eee;
+    padding: .5em 1em;
+    border-radius: 2em;
+    color: blue;
+    margin-top: 1em;
+    border: none;
+    transition: background 0.5s;
+    transition: padding .5s;
+  }
+  
+  header #personal-info .contact-btn:hover {
+    background-color:blue;
+    color: #fff;
+    cursor: pointer;
+    padding: 0.5em 2em;
+  }
+  
+  /* skills section */
+  #skills {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5em;
+  }
+  
+  @media (max-width: 768px) {
+    #skills {
+      flex-direction: column;
+    }
+  }
+  
+  #skills .skill {
+    text-align: center;
+    padding: 2em;
+    line-height: 2em;
+    background: #fff;
+    color: #222;
+  }
+  
+  #skills .skill i {
+    color: blue;
+  }
+  
+  
+  /* projects section */
+  #my-projects {
+    text-align: center;
+    line-height: 2em;
+    padding-top: 2em;
+  }
+  
+  #my-projects h3 {
+    color: blue;
+  }
+  
+  .projects-images-wrapper {
+    padding-top: 2em;
+    width: 800px;
+    display: block;
+    margin: auto;
+  }
+  
+  .projects-images img {
+    margin: 5px;
+    height: 300px;
+    width: 350;
+    border: 1px;
+  }
+  
+  /* footer */
+  footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 3em;
+    text-align: center;
+  }
+  
+  div.portfolio {
+    color: blue;
+  }
+  
+  .top {
+    background: #333;
+    color: #fff;
+    padding: .5em;
+    border-radius: 50%;
+    border: 2px lightblue solid;
+  }
+  
+  footer .footer-links {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 3em;
+    font-size: 0.7em;
+  }
+  
+  @media (max-width: 768px) {
+    footer .footer-links {
+      flex-direction: column;
+    }
+  }
+  
+  footer .footer-links ul.links {
+    list-style: none;
+    display: flex;
+  }
+  @media (max-width: 768px){
+    footer .footer-links ul.links {
+      flex-direction: column;
+    }
+  }
+  
+  footer .footer-links ul.links li a {
+    color: white;
+    text-decoration: none;
+    margin-right: 1em;
+  }
+  
+  
