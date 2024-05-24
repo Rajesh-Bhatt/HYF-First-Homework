@@ -32,6 +32,10 @@ header {
   font-weight: 600;
 }
 
+.logo span {
+  font-style: italic;
+}
+
 .navbar a {
   font-size: 18px;
   color: #ededed;
@@ -187,7 +191,7 @@ header {
 
 .projects-images img {
   height: 300px;
-  border: 1px;
+  border: solid white 2px;
 }
 
 .projects-images img:hover {
