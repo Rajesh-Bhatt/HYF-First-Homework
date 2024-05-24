@@ -1,4 +1,4 @@
-@import url("https://fonts.google.apis/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
 * {
   margin: 0;
@@ -45,12 +45,6 @@ header {
 .navbar a:hover,
 .navbar a.active {
   color: #00abf0;
-}
-
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-  }
 }
 
 .home {
@@ -177,7 +171,6 @@ header {
 #my-projects {
   text-align: center;
   line-height: 2em;
-  padding-top: 2em;
 }
 
 #my-projects h2 {
@@ -185,17 +178,15 @@ header {
   margin: 0 10%;
 }
 
-.projects-images-wrapper {
-  padding-top: 2em;
-  width: 800px;
-  display: inline;
-  margin: auto;
+.projects-images {
+  margin: 0 10%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1em;
 }
 
 .projects-images img {
-  margin: 5px;
   height: 300px;
-  width: 100;
   border: 1px;
 }
 
@@ -237,25 +228,30 @@ footer .footer-links {
   font-size: 0.7em;
 }
 
-@media (max-width: 768px) {
-  footer .footer-links {
-    flex-direction: column;
-  }
-}
-
 footer .footer-links ul.links {
   list-style: none;
   display: flex;
-}
-
-@media (max-width: 768px) {
-  footer .footer-links ul.links {
-    flex-direction: column;
-  }
 }
 
 footer .footer-links ul.links li a {
   color: white;
   text-decoration: none;
   margin-right: 1em;
+}
+
+@media (max-width: 768px) {
+  .navbar,
+  #header,
+  footer .footer-links,
+  footer .footer-links ul.links,
+  .cells,
+  .projects-images {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  footer {
+    height: 25em;
+  }
 }
