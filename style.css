@@ -38,7 +38,9 @@ header {
 
 .profile-picture {
   display: flex;
-  justify-content: center; /* Centers the image horizontally */
+  justify-content: left; /* Centers the image horizontally */
+  margin-bottom: 20px;
+  margin-left: 180px;
   margin-top: 20px; /* Adds some space between header and image */
 }
 
