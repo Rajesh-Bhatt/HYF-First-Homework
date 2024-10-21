@@ -38,20 +38,19 @@ header {
 
 .profile-picture {
   display: flex;
-  justify-content: left; /* Centers the image horizontally */
+  justify-content: left;
+  margin-top: 10px;
   margin-bottom: 20px;
   margin-left: 180px;
-  margin-top: 20px; /* Adds some space between header and image */
 }
 
 .profile-picture img {
-  width: 150px; /* Adjust the size */
-  height: 150px; /* Adjust the size */
-  border-radius: 50%; /* Makes the image round */
-  object-fit: cover; /* Ensures the image covers the container */
-  border: 2px solid #00abf0; /* Optional: Add a border around the image */
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #00abf0;
 }
-
 .navbar a {
   font-size: 18px;
   color: #ededed;
